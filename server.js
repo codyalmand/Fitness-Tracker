@@ -12,11 +12,16 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
-mongoose.connect(MONGODB_URI,{  
-    useNewUrlParser:true,
-    useFindAndModify:false
-})
+// const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/";
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost/fitnesstrackerDB',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  }
+);
 
 // app.use(routes);
 // require("./routes")(app);
