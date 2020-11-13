@@ -1,7 +1,7 @@
 const Workout = require("../models/index.js")
 const router = require("express").Router();
 
-module.exports = function(app){ 
+ 
     router.get("/api/workouts",function(req,res){  
         Workout.find()
         .then(data =>{  
@@ -51,4 +51,5 @@ module.exports = function(app){
             res.json(err)
         })
     });
-}
+    
+    module.exports = router;
