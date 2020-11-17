@@ -29,7 +29,7 @@ This app allows the user to view, create and track daily workouts. You are able 
 
 ## My GitHub Repositories: https://github.com/codyalmand
 
-## Note Taker Repo: https://github.com/codyalmand/Fitness-Tracker
+## Fitness-Tracker Repo: https://github.com/codyalmand/Fitness-Tracker
 
 <br>
 
